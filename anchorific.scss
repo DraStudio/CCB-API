@@ -1,7 +1,6 @@
 nav.anchorific{
-	background-color: rgb(237, 237, 237);
+	background-color: rgba(247, 247, 247, 1);
 	width: 20%;
-	padding: 1em;
 	margin-left: 5%;
 	float: right;
 	z-index: 1;
@@ -11,13 +10,34 @@ nav.anchorific{
 	ul{
 		margin: 0;
 		padding: 0;
+		list-style-type: none;
 	}
 	li{
 		margin: 0;
+		a{
+			font-size: 1em;
+			display: block;
+			padding: .5em 1em;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
 	}
 	li ul{
 		margin-left: 1.5em;
-		//display: block;
+		margin-bottom: 1em;
+		list-style-type: disc;
+		display: none;
+		li{
+			margin-left: 1em;
+			a{
+				padding: 0;
+			}
+		}
+	}
+	li[data-tag='2']{
+		border-top: 1px white solid;
 	}
 	li[data-tag='3'] ul{
 		display: none;
@@ -29,38 +49,7 @@ nav.anchorific{
 a.anchor{
 	display: none;
 }
-header h1 {
-    position: fixed;
-    margin-top: -3px;
-    margin-left: 20px;
-    font-size: 2.2em;
-}
-header h1 a { color: #000 }
-h1 { font-size: 2em }
-a {
-    text-decoration: none;
-    color: #70a0b5;
-}
-a.anchor {
-    text-decoration: none;
-    padding-left: 1%;
-    opacity: .5;
-    color: #238b90;
-    font-size: .7em;
-    font-family: Baumans,cursive;
-}
-a:hover.anchor { opacity: 1 }
-.anchorific ul { list-style-type: none }
-.anchorific li ul {
-    list-style-type: disc;
-    display: none;
-}
-.anchorific ul li a {
-    font-size: 1em;
-    display: block;
-    padding-left: 5px;
-}
-.anchorific li.active>a { border-right: #5a5a5a 2px solid }
+// .anchorific li.active>a { background-color: #f5f5f5; }
 .anchorific li.active>ul { display: block }
 .top {
 	/* Icon by: https://www.iconfinder.com/icons/211623/arrow_b_up_icon#size=20 */

@@ -8362,10 +8362,18 @@ udf_group_pulldown_#</em>admin</td>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="anchorific.min.js"></script>
 <script>
-	$('#documentation').anchorific({
-		//spy: false,
-		top: '.top',
+$(document).ready(function(){
+	$('#documentation').anchorific();
+	$('.anchorific').hide();
+	var elem = $("#batches");
+	var div_top = elem.offset().top;
+	
+	$(document).scroll(function() {
+	    if (div_top <= $(document).scrollTop()) {
+	        $('.anchorific').fadeIn();
+	    }
 	});
+});
 </script>
 <link rel="stylesheet" href="anchorific.css">
 </body></html>
