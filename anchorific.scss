@@ -63,16 +63,18 @@ a:hover.anchor { opacity: 1 }
 .anchorific li.active>a { border-right: #5a5a5a 2px solid }
 .anchorific li.active>ul { display: block }
 .top {
+	/* Icon by: https://www.iconfinder.com/icons/211623/arrow_b_up_icon#size=20 */
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAsUlEQVQ4T2NkoDJgpLJ5DKMGUh6ixIQhE9CaDqhVFUD6Hz5riTFwFtCAVKghc5DYWM0lZGAxUFcPms5SLGJwJfgMDAaqWgXEIC8jg/9ATgwQL8PmRFwGWgIV7wNiDhzh9QMo7gzEx9DlsRmoClUoQiDO3wLlQRbfRlaHbiAv1DAdAobBpK9CDf0ME0A3UBIoAYpJNiIN/AVUlwLEz3EZSKQ5uJURSjYkWzBqIMlBhqEBAKUTFRWStpKLAAAAAElFTkSuQmCC') no-repeat;
     display: none;
     width: 100px;
-    color: #5f5f5f;
+    color: #000;
     font-size: .75em;
     font-weight: bold;
     text-decoration: none;
     position: fixed;
     right: 5px;
     bottom: 5px;
-    padding: 1px;
+    padding: 3px 0 0 4px;
     text-align: center;
 }
 /* Hide Anchorific for Mobile */
