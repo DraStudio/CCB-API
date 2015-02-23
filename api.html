@@ -309,8 +309,9 @@ pre {
 <!--End API Logo-->
 <nav class='anchorific'></nav>
 
-  <div id="wrapper">
-      <h1 id="introduction">Introduction</h1>
+<div id="wrapper">
+<div id="overview">
+ <h1 id="introduction">Introduction</h1>
 
 <p>This implementer’s guide provides information about the Church Community Builder Application Programming Interface (API) Group services.<br>
 This document will specify the necessary values for requests and responses to and from the API, and will provide sample code for accessing the API.</p>
@@ -338,7 +339,9 @@ https://tribe.ccbchurch.com</p>
 https://tribe.ccbchurch.com</p>
 
 <p>User community resources include or will include discussion forums, additional API documentation, tutorials, sample code, sample projects, and custom solutions as contributed by other members of the community. If you have questions or need help, try asking the API User Community. Church Community Builder does not provide official support for API integration.</p>
+</div><!-- #overview -->
 
+<div id="documentation">
 <h2 id="batches">Batches</h2>
 
 <p>The Church Community Builder Batch services allow you to have access to your transaction information.</p>
@@ -8351,15 +8354,18 @@ udf_group_pulldown_#</em>admin</td>
 </tbody>
 </table>
 
-<!-- ##END MARKED WRAPPER## -->
-    </div>
+</div><!-- #documentation -->
+</div><!-- #wrapper -->
     
 <!-- ##Anchorify the Page -->
- <a href="#top" class="top">Scroll to top</a>
+ <a href="#top" class="top">Scroll to Top</a>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="anchorific.min.js"></script>
 <script>
-	$('#wrapper').anchorific();
+	$('#documentation').anchorific({
+		//spy: false,
+		top: '.top',
+	});
 </script>
 <link rel="stylesheet" href="anchorific.css">
 </body></html>
