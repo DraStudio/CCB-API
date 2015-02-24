@@ -8358,9 +8358,9 @@ udf_group_pulldown_#</em>admin</td>
 </div><!-- #wrapper -->
     
 <!-- ##Anchorify the Page -->
- <a href="#top" class="top">Scroll to Top</a>
+<a href="#top" class="top">Scroll to Top</a>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script src="anchorific.min.js"></script>
+<script src="anchorific.js"></script>
 <script>
 $(document).ready(function(){
 	$('#documentation').anchorific();
@@ -8371,7 +8371,12 @@ $(document).ready(function(){
 	$(document).scroll(function() {
 	    if (div_top <= $(document).scrollTop()) {
 	        $('.anchorific').fadeIn();
+// 	        $('.top').fadeIn();
 	    }
+	});
+	$('li[data-tag="2"').click(function(){
+		$('li[data-tag="2"').removeClass('active');
+		$(this).addClass('active');
 	});
 });
 </script>
