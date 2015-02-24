@@ -71,6 +71,7 @@ a.anchor{
 /* Hide Anchorific for Mobile */
 @media only screen and (max-width: 1023px) {
 	.anchorific{
-		display: none;
+		display: none !important;
+		border: 1px red solid;
 	}
 }
